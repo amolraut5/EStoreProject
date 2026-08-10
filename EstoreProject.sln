@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.37411.7
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EstoreAdmin", "EstoreAdmin", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EstoreAdminModule", "EStoreAdmin\EstoreAdminModule\EstoreAdminModule.csproj", "{58150A61-17D0-4C2D-838F-BFC9B9B2EE47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EstoreModel", "EStoreAdmin\EstoreModel\EstoreModel.csproj", "{A0E4DB89-DBC0-4FDA-A523-177C0421EF7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EStoreService", "EStoreAdmin\EStoreService\EStoreService.csproj", "{97571E40-5A2D-40B3-B67E-5E539FE0ACAC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{58150A61-17D0-4C2D-838F-BFC9B9B2EE47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58150A61-17D0-4C2D-838F-BFC9B9B2EE47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58150A61-17D0-4C2D-838F-BFC9B9B2EE47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58150A61-17D0-4C2D-838F-BFC9B9B2EE47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0E4DB89-DBC0-4FDA-A523-177C0421EF7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0E4DB89-DBC0-4FDA-A523-177C0421EF7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0E4DB89-DBC0-4FDA-A523-177C0421EF7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0E4DB89-DBC0-4FDA-A523-177C0421EF7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97571E40-5A2D-40B3-B67E-5E539FE0ACAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97571E40-5A2D-40B3-B67E-5E539FE0ACAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97571E40-5A2D-40B3-B67E-5E539FE0ACAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97571E40-5A2D-40B3-B67E-5E539FE0ACAC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{58150A61-17D0-4C2D-838F-BFC9B9B2EE47} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{A0E4DB89-DBC0-4FDA-A523-177C0421EF7E} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{97571E40-5A2D-40B3-B67E-5E539FE0ACAC} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8C2FEC7B-E44F-49CF-BFDD-7DE3D8DC4497}
+	EndGlobalSection
+EndGlobal

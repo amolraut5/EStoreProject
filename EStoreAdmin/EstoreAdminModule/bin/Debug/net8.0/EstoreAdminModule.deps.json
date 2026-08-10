@@ -1,0 +1,56 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "EstoreAdminModule/1.0.0": {
+        "dependencies": {
+          "EStoreService": "1.0.0",
+          "EstoreModel": "1.0.0"
+        },
+        "runtime": {
+          "EstoreAdminModule.dll": {}
+        }
+      },
+      "EstoreModel/1.0.0": {
+        "runtime": {
+          "EstoreModel.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "EStoreService/1.0.0": {
+        "dependencies": {
+          "EstoreModel": "1.0.0"
+        },
+        "runtime": {
+          "EStoreService.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "EstoreAdminModule/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EstoreModel/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EStoreService/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,35 @@
+﻿@using EstoreModel.Models.BrandModels;
+@model IEnumerable<BrandModel>;
+<html>
+<head>
+    <link href="~/bootstrap/css/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="h1 text-center">
+                Welcome to Brand Page....!
+            </div>
+        </div>
+        <div class="row">
+            <table class="table table-primary table-hover">
+                <thead>
+                    <tr>
+                        <td>Brand ID </td>
+                        <td>Brand Name </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (BrandModel bmodel in Model)
+                    {
+                        <tr>
+                            <td>@bmodel.Id</td>
+                            <td>@bmodel.Name</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
