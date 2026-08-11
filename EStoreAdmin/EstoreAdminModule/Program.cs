@@ -10,4 +10,5 @@ app.UseStaticFiles();  // it help me to download the required file like bootstra
 app.UseRouting();//Define routing
 app.MapControllers();//call to all controller without view
 
+
 app.Run();
