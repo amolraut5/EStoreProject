@@ -8,11 +8,20 @@
 
   <ItemGroup>
     <ProjectReference Include="..\EstoreModel\EstoreModel.csproj" />
+    <ProjectReference Include="..\EStoreRepository\EStoreRepository.csproj" />
     <ProjectReference Include="..\EStoreService\EStoreService.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.29" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.29">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
   </ItemGroup>
 
 </Project>

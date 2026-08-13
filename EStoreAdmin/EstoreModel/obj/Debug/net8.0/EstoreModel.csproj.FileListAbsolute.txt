@@ -9,3 +9,15 @@ D:\C#\Class_Notes\Microservices\EstoreProject\EStoreAdmin\EstoreModel\obj\Debug\
 D:\C#\Class_Notes\Microservices\EstoreProject\EStoreAdmin\EstoreModel\obj\Debug\net8.0\refint\EstoreModel.dll
 D:\C#\Class_Notes\Microservices\EstoreProject\EStoreAdmin\EstoreModel\obj\Debug\net8.0\EstoreModel.pdb
 D:\C#\Class_Notes\Microservices\EstoreProject\EStoreAdmin\EstoreModel\obj\Debug\net8.0\ref\EstoreModel.dll
+D:\C#\Class_Notes\Microservices\GitSourceCode\EStoreProject\EStoreAdmin\EstoreModel\bin\Debug\net8.0\EstoreModel.deps.json
+D:\C#\Class_Notes\Microservices\GitSourceCode\EStoreProject\EStoreAdmin\EstoreModel\bin\Debug\net8.0\EstoreModel.dll
+D:\C#\Class_Notes\Microservices\GitSourceCode\EStoreProject\EStoreAdmin\EstoreModel\bin\Debug\net8.0\EstoreModel.pdb
+D:\C#\Class_Notes\Microservices\GitSourceCode\EStoreProject\EStoreAdmin\EstoreModel\obj\Debug\net8.0\EstoreModel.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\Class_Notes\Microservices\GitSourceCode\EStoreProject\EStoreAdmin\EstoreModel\obj\Debug\net8.0\EstoreModel.AssemblyInfoInputs.cache
+D:\C#\Class_Notes\Microservices\GitSourceCode\EStoreProject\EStoreAdmin\EstoreModel\obj\Debug\net8.0\EstoreModel.AssemblyInfo.cs
+D:\C#\Class_Notes\Microservices\GitSourceCode\EStoreProject\EStoreAdmin\EstoreModel\obj\Debug\net8.0\EstoreModel.csproj.CoreCompileInputs.cache
+D:\C#\Class_Notes\Microservices\GitSourceCode\EStoreProject\EStoreAdmin\EstoreModel\obj\Debug\net8.0\EstoreModel.sourcelink.json
+D:\C#\Class_Notes\Microservices\GitSourceCode\EStoreProject\EStoreAdmin\EstoreModel\obj\Debug\net8.0\EstoreModel.dll
+D:\C#\Class_Notes\Microservices\GitSourceCode\EStoreProject\EStoreAdmin\EstoreModel\obj\Debug\net8.0\refint\EstoreModel.dll
+D:\C#\Class_Notes\Microservices\GitSourceCode\EStoreProject\EStoreAdmin\EstoreModel\obj\Debug\net8.0\EstoreModel.pdb
+D:\C#\Class_Notes\Microservices\GitSourceCode\EStoreProject\EStoreAdmin\EstoreModel\obj\Debug\net8.0\ref\EstoreModel.dll

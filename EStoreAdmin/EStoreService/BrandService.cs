@@ -1,29 +1,22 @@
 ﻿using EstoreModel.Models.BrandModels;
+using EstoreModel.ServiceContracts;
+using EStoreRepository;
 
 namespace EStoreService
 {
-    public class BrandService
+    public class BrandService:IBrandService
     {
+        private readonly BrandRepository _brandRepository;
+
+        public BrandService(BrandRepository brandRepository) 
+        {
+            _brandRepository = brandRepository;
+        }
         public List<BrandModel> ListBrands()
         {
-            List <BrandModel> brandModels = new List <BrandModel>();
-            brandModels.Add(new BrandModel
-            {
-                Id = Guid.NewGuid(),
-                Name = "Brand 1"
-            });
-
-            brandModels.Add(new BrandModel
-            {
-                Id = Guid.NewGuid(),
-                Name = "Brand 2"
-            });
-
-            brandModels.Add(new BrandModel
-            {
-                Id = Guid.NewGuid(),
-                Name = "Brand 3"
-            });
+            List <BrandModel> brandModels = 
+                this._brandRepository.Brands.ToList();
+            
             return brandModels;
         }
 

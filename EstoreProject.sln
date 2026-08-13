@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EstoreModel", "EStoreAdmin\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EStoreService", "EStoreAdmin\EStoreService\EStoreService.csproj", "{97571E40-5A2D-40B3-B67E-5E539FE0ACAC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EStoreRepository", "EStoreAdmin\EStoreRepository\EStoreRepository.csproj", "{5F392E07-DFD4-4D7E-A9D9-9C8415FBCE8F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +31,10 @@ Global
 		{97571E40-5A2D-40B3-B67E-5E539FE0ACAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{97571E40-5A2D-40B3-B67E-5E539FE0ACAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{97571E40-5A2D-40B3-B67E-5E539FE0ACAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F392E07-DFD4-4D7E-A9D9-9C8415FBCE8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F392E07-DFD4-4D7E-A9D9-9C8415FBCE8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F392E07-DFD4-4D7E-A9D9-9C8415FBCE8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F392E07-DFD4-4D7E-A9D9-9C8415FBCE8F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -37,6 +43,7 @@ Global
 		{58150A61-17D0-4C2D-838F-BFC9B9B2EE47} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{A0E4DB89-DBC0-4FDA-A523-177C0421EF7E} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{97571E40-5A2D-40B3-B67E-5E539FE0ACAC} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{5F392E07-DFD4-4D7E-A9D9-9C8415FBCE8F} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8C2FEC7B-E44F-49CF-BFDD-7DE3D8DC4497}
