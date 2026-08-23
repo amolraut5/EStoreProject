@@ -29,6 +29,7 @@
                     <tr>
                         <td>Brand ID </td>
                         <td>Brand Name </td>
+                        <td>Edit</td>
                         <td>Delete</td>
                     </tr>
                 </thead>
@@ -50,6 +51,14 @@
                             <tr>
                                 <td>@bmodel.Id</td>
                                 <td>@bmodel.Name</td>
+                                <td>
+                                    <a class="btn btn-outline-danger"
+                                       asp-controller="Brand"
+                                       asp-action="EditBrand"
+                                       asp-route-Id="@bmodel.Id">
+                                        Edit
+                                    </a>
+                                </td>
                                 <td>
                                     <a class="btn btn-outline-danger"
                                        asp-controller="Brand"

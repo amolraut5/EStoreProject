@@ -10,7 +10,7 @@ namespace EstoreAdminModule.Contollers
         private readonly IBrandService _brandservice;
 
         //Dependency Injection the IBrandService Object
-        public BrandController(IBrandService brandservice) 
+        public BrandController(IBrandService brandservice)
         {
             _brandservice = brandservice;
         }
@@ -48,7 +48,7 @@ namespace EstoreAdminModule.Contollers
 
             //return Ok(brandModels); // if you don't have to show in view the used "Ok(brandModel)"
             // return View(brandModels);  //Here we have return in view
-             return View(DIbrandModels);  //here we have DI objceted value return in view
+            return View(DIbrandModels);  //here we have DI objceted value return in view
         }
 
         [HttpGet]
@@ -65,5 +65,30 @@ namespace EstoreAdminModule.Contollers
         {
             return View();
         }
+
+        [HttpPost]
+        [Route("CreateBrand")]
+        public IActionResult CreateBrand(CreateBrandModel createBrandModel)
+        {
+            //Building Login to insert Brand in the DB
+            if (createBrandModel == null)
+                throw new Exception("Brand Name is not null or empty");
+
+            //call Brandservice to create a brand in the DB
+            this._brandservice.CreateBrand(createBrandModel);
+            return RedirectToAction("Index");
+        }
+
+        [HttpGet]
+        [Route("EditBrand/{Id:guid}")]
+        public IActionResult EditBrand(Guid Id)
+        {
+            if (Id == Guid.Empty)
+                throw new Exception("Brand Id is not null or empty");
+            UpdateBrandModel updateBrandModel
+                =this._brandservice.GetBrandById(Id);
+            return View();
+        }
+
     }
 }
