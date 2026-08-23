@@ -50,5 +50,20 @@ namespace EstoreAdminModule.Contollers
             // return View(brandModels);  //Here we have return in view
              return View(DIbrandModels);  //here we have DI objceted value return in view
         }
+
+        [HttpGet]
+        [Route("DeleteBrand/{Id:guid}")]
+        public IActionResult DeleteBrand(Guid Id)
+        {
+            this._brandservice.DeleteBrand(Id);
+            return RedirectToAction("Index");
+        }
+
+        [HttpGet]
+        [Route("CreateBrand")]
+        public IActionResult CreateBrand()
+        {
+            return View();
+        }
     }
 }

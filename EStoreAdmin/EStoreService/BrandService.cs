@@ -12,6 +12,19 @@ namespace EStoreService
         {
             _brandRepository = brandRepository;
         }
+
+        public void DeleteBrand(Guid Id)
+        {
+            if (Id == Guid.Empty)
+                throw new Exception("Brand Id is not null or empty");
+            BrandModel?brandModel = 
+                this._brandRepository.Brands.Where(e => e.Id == Id).FirstOrDefault();
+            if (brandModel == null)
+                throw new Exception("Brand Model Is not null or empty");
+            this._brandRepository.Remove(brandModel);
+            this._brandRepository.SaveChanges();
+        }
+
         public List<BrandModel> ListBrands()
         {
             List <BrandModel> brandModels = 
