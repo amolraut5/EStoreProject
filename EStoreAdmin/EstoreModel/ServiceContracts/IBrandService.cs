@@ -11,6 +11,8 @@ namespace EstoreModel.ServiceContracts
         void CreateBrand(CreateBrandModel createBrandModel);
 
         UpdateBrandModel GetBrandById(Guid Id);
+
+        void UpdateBrand(UpdateBrandModel updateBrandModel);
        
     }
     

@@ -63,5 +63,18 @@ namespace EStoreService
             return brandModels;
         }
 
+        public void UpdateBrand(UpdateBrandModel updateBrandModel)
+        {
+            if (updateBrandModel == null)
+                throw new Exception("Brand Model is not Null or empty");
+            BrandModel brandModel = new BrandModel()
+            {
+                Id = updateBrandModel.Id,
+                Name = updateBrandModel.Name,
+            };
+
+            this._brandRepository.Brands.Update(brandModel);
+            this._brandRepository.SaveChanges();
+        }
     }
 }

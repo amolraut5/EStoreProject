@@ -87,7 +87,15 @@ namespace EstoreAdminModule.Contollers
                 throw new Exception("Brand Id is not null or empty");
             UpdateBrandModel updateBrandModel
                 =this._brandservice.GetBrandById(Id);
-            return View();
+            return View(updateBrandModel);
+        }
+
+        [HttpPost]
+        [Route("UpdateBrand/{Id:guid}")]
+        public IActionResult UpdateBrand(UpdateBrandModel updateBrandModel,Guid Id)
+        {
+            this._brandservice.UpdateBrand(updateBrandModel);
+            return RedirectToAction("Index");
         }
 
     }

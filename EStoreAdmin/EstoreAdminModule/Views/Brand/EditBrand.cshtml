@@ -1,4 +1,8 @@
-﻿<html>
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@using EstoreModel.Models.BrandModels;
+@model UpdateBrandModel
+
+<html>
 <head>
     <link href="~/bootstrap/css/bootstrap.css" rel="stylesheet" />
 </head>
@@ -6,9 +10,47 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 mx-auto rounded border p-3 mt-3">
-                <div clasa="hi">
-                    Edit Brand
-                </div>
+                <form method="post" enctype="multipart/form-data">
+                    <div class="row mt-3">
+                        <div class="h1 text-center">
+                            Edit Brand-@Model.Name
+                        </div>
+                    </div>
+
+                    <div class="row mt-3">
+                        <div class="col-lg-4">
+                            <lable asp-for="Id">Brand ID</lable>
+                        </div>
+                        <div class="col-lg-4">
+                            <input type="text" class="form-control"
+                                   asp-for="Id" readonly />
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-lg-4">
+                            <lable asp-for="Name">Brand</lable>
+                        </div>
+                        <div class="col-lg-4">
+                            <input type="text" class="form-control"
+                                   asp-for="Name" />
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-lg-4">
+                            <a href="" class="btn btn-outline-secondary">
+                                Cancel
+                            </a>
+                        </div>
+                        <div class="col-lg-4">
+                            <button href="" class="btn btn-outline-secondary"
+                                    asp-controller="Brand"
+                                    asp-action="UpdateBrand"
+                                    asp-route-id="@Model.Id">
+                                Submit
+                            </button>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
